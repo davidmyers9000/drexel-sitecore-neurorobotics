@@ -16,7 +16,6 @@
           - else
             = link_to page.title, "/#{page.url}"
 
-          / = link_to page.title, page.url
           %ul.dropdown
             - if page.sub_pages?
               - page.sub_pages.each do |sub|
@@ -25,4 +24,3 @@
                     = link_to sub.title, "/#{page.url}/#{sub.url}", class: "active"
                   - else
                     = link_to sub.title, "/#{page.url}/#{sub.url}"
-                / %li= link_to sub.title, page.url + "/" + sub.url
