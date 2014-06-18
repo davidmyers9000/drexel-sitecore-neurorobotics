@@ -15,13 +15,15 @@ $footer-border-color: #d6a831;
 $drexel-blue: #07294D;
 $drexel-yellow: #ffc600;
 
+@import "compass/css3/box-shadow";
+
 @mixin font-stack{
   font-family: FuturaBold, sans-serif;
   text-transform: uppercase;
 } 
 
 body {
-  background-image: url("http://drexel.edu/~/media/Images/coresite/backgrounds/colored-backgrounds/blue-bg/wide.ashx");
+  background-image: url("/images/wide.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -259,3 +261,4 @@ footer.footer {
 }
 
 @import "people";
+@import "slideshow";
