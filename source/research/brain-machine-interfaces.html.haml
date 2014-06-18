@@ -4,42 +4,11 @@ title: Cortical Brain Machine Interfaces (BMI) for restoring locomotion
   
 .row
   .twelve.large-12.columns
-    .panel
-      %h3 We&rsquo;re stoked you want to try Foundation!
-      %p To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.
-      %p Once you've exhausted the fun in this document, you should check out:
-.row
-  .four.medium-4.columns
-    %p <a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.
-  .four.medium-4.columns
-    %p <a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.
-  .four.medium-4.columns
-    %p <a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
-                
-            
-.row
-  .eight.medium-8.columns
-    %h5 Here&rsquo;s your basic grid:
-    <!-- Grid Example -->
+    %h4= current_page.data.title
+    %p The brain's ability to effectively plan for and execute precise hindlimb movements in response to varying sensorimotor conditions is unquestionable. Despite neurophysiological evidence that neurons in hindlimb sensorimotor cortex circuits are modulated during volitional hindlimb movements, the precise nature of these sensorimotor interactions remains elusive. Further, much effort has been devoted to the control of visually guided forelimb movements, resulting in the development of viable control signals for external effectors (motor brain-machine interfaces; BMI) in healthy subjects, and importantly, subjects suffering from neuropathological conditions such as stroke, ALS, and upper spinal cord injury. Unfortunately, less focus has been given to the development of similar algorithms to restore hindlimb function in the same patient population.
+ 
+    %p Therefore, it is central goal of our BMI efforts to investigate the contributions of hindlimb sensorimotor cortical networks to goal-directed and compensatory limb movements, and ultimately to use this insight to optimize the development of algorithms for the restoration of hindlimb function in the aftermath of devastating spinal injury. We have approached this problem in a number of behavioral paradigms: (1) goal-directed skilled hindlimb movements (Manohar et al. 2012; Knudsen et al. 2011; Knudsen et al. 2012), (2) obstacle avoidance during treadmill locomotion, and (3) compensatory postural adjustments to unexpected perturbations of balance. In each case, we record spiking activity from populations of hindlimb sensorimotor cortex neurons while the tasks are performed. Then, using measures of motor performance (i.e. electromyography, high speed video recording, ground reaction forces, etc.) we relate concomitant neural activity with behavior. Using this, we then attempt to decode this activity offline, with the goal of ultimately closing the loop to provide online control after spinal cord injury.
 
-.row
-  .twelve.large-12.columns
-    .callout.panel
-      %p <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.
-.row
-  .six.medium-6.columns
-    .callout.panel
-      %p Six columns
-  .six.medium-6.columns
-    .callout.panel
-      %p Six columns
-.row
-  .four.medium-4.small-4.columns
-    .callout.panel
-      %p Four columns
-  .four.medium-4.small-4.columns
-    .callout.panel
-      %p Four columns
-  .four.medium-4.small-4.columns
-    .callout.panel
-      %p Four columns
+    %ul.block-grid.two-up.small-block-grid-2
+      %li= tag :img, :src => "/images/climbingCell.jpg"
+      %li= tag :img, :src => "/images/spike-field-coherence.jpg"

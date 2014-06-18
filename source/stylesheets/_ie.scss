@@ -149,7 +149,7 @@ nav.top-bar {
     .centerthis {
       float: none !important;
       display: block;
-      width: 560px;
+      width: 660px;
       margin: 0 auto;
     }
 
@@ -351,3 +351,23 @@ footer.footer {
 .social-blue .duicon-youtube { 
   background-position:-144px -247px; 
 }
+
+@import "people";
+
+/* full clearfix */
+/* add to floating elements which shall clear floating after themselves */ 
+/* http://cthedot.de/static/xbrowsertests/floatx.html */
+* html .clearfix {
+  height: 1%; /* IE5-6 */
+}
+*+html .clearfix {
+  display: inline-block; /* IE7not8 */
+}
+.clearfix:after { /* FF, IE8, O, S, etc. */
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+

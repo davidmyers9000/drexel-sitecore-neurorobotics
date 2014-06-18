@@ -4,42 +4,12 @@ title: Neuronal Dynamics during Epilectic Seizures
   
 .row
   .twelve.large-12.columns
-    .panel
-      %h3 We&rsquo;re stoked you want to try Foundation!
-      %p To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.
-      %p Once you've exhausted the fun in this document, you should check out:
-.row
-  .four.medium-4.columns
-    %p <a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.
-  .four.medium-4.columns
-    %p <a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.
-  .four.medium-4.columns
-    %p <a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).
-                
-            
-.row
-  .eight.medium-8.columns
-    %h5 Here&rsquo;s your basic grid:
-    <!-- Grid Example -->
+    %h3= current_page.data.title
+    %p Epilepsy is a neurological disorder that affects more than 2 million people in United States alone and 65 million cases worldwide, and it manifests as spontaneous seizures, which usually involve loss of consciousness and stiffening/jerking of limbs. While some patients benefit from pharmacotherapy, about 30% of the patient population does not find improvement by these drugs. One effective way of improving their quality of life is to warn the patient when a seizure is likely to occur. To provide such timely warnings, efficient seizure prediction algorithms are required. Many groups have tried to develop these by using EEG signals with little success. Our research aims to meet this scientific need by studying the spiking activity of individual neurons and the local EEG before a local network is recruited into a seizure. Our publications (Grasse et al, 2013 & Karunakaran et al, 2012) identify these neuronal changes in hippocampus during the transition to seizures in chronic epilepsy and status epilepticus respectively.
+    
+    %p Once reliable markers for predicting seizures are identified, they can be used to provide patient alerts or electrical stimulus to abort these seizures. The ultimate goal of this project is to design a closed-loop implantable device that can record neural activity from the brain, analyze the data, predict seizure timing, and automatically deliver electrical stimulus to abort seizures. 
 
-.row
-  .twelve.large-12.columns
-    .callout.panel
-      %p <strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.
-.row
-  .six.medium-6.columns
-    .callout.panel
-      %p Six columns
-  .six.medium-6.columns
-    .callout.panel
-      %p Six columns
-.row
-  .four.medium-4.small-4.columns
-    .callout.panel
-      %p Four columns
-  .four.medium-4.small-4.columns
-    .callout.panel
-      %p Four columns
-  .four.medium-4.small-4.columns
-    .callout.panel
-      %p Four columns
+    %ul.block-grid.two-up.small-block-grid-2
+      %li= tag :img, :src => "/images/peri-seizure-PSTH.jpg"
+      %li= tag :img, :src => "/images/seizure-LFP-and-multiunit-activity.jpg"
+      %li= tag :img, :src => "/images/spike-field-coherence.jpg"
