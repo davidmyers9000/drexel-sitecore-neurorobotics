@@ -3,4 +3,5 @@
 //= require bxslider-4/jquery.bxslider
 
 //= require app
+//= require bxslider
 //= require script
