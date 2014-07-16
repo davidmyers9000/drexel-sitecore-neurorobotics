@@ -3,10 +3,10 @@ title: Home
 ---
 
 %ul.bxslider
-  %li= tag :img, src: "#{img_path}slideshow/spinal-cord-surgery.jpg", title: "Cortical Reorganization after Spinal Cord Surgery <br><a class='more-link' href='#{base_path}research/spinal-cord-surgery'>More Info</a>"
-  %li= tag :img, src: "#{img_path}slideshow/brain-machine-interfaces.jpg", title: "Cortical Brain Machine Interfaces (BMI) for restoring locomotion <br><a class='more-link' href='#{base_path}research/brain-machine-interfaces'>More Info</a>"
-  %li= tag :img, src: "#{img_path}slideshow/research-developments.jpg", title: "Technology Developments and Patents <br><a class='more-link' href='#{base_path}technology-development'>More Info</a>"
-  %li= tag :img, src: "#{img_path}slideshow/epilectic-seizures.jpg", title: "Neuronal Dynamics during Epilectic Seizures <br><a class='more-link' href='#{base_path}research/epilectic-seizures'>More Info</a>"
+  %li= image_tag "slideshow/spinal-cord-surgery.jpg", title: "Cortical Reorganization after Spinal Cord Surgery <br><a class='more-link' href='#{http_prefix}research/spinal-cord-surgery'>More Info</a>"
+  %li= image_tag "slideshow/brain-machine-interfaces.jpg", title: "Cortical Brain Machine Interfaces (BMI) for restoring locomotion <br><a class='more-link' href='#{http_prefix}research/brain-machine-interfaces'>More Info</a>"
+  %li= image_tag "slideshow/research-developments.jpg", title: "Technology Developments and Patents <br><a class='more-link' href='#{http_prefix}technology-development'>More Info</a>"
+  %li= image_tag "slideshow/epilectic-seizures.jpg", title: "Neuronal Dynamics during Epilectic Seizures <br><a class='more-link' href='#{http_prefix}research/epilectic-seizures'>More Info</a>"
 
 .row
   .six.medium-6.columns
@@ -26,4 +26,4 @@ title: Home
           %li
             %strong= link_to data.publications[i].title, "publications##{data.publications[i].url}"
             = "- #{data.publications[i].publisher}"
-      = link_to "More Publications", "/publications", class: "more-link"
+      = link_to "More Publications", "#{http_prefix}publications", class: "more-link"
