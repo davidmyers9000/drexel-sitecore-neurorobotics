@@ -1,4 +1,4 @@
 .logo
   %h1.lockup
-    %a(href="#{base_path}")
-      %img(src="#{img_path}Logo_Neurorobotics.png")
+    = link_to "#{base_path}" do
+      = image_tag "Logo_Neurorobotics.png"
