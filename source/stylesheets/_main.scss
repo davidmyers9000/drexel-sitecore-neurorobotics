@@ -4,7 +4,7 @@
 } 
 
 body {
-  background-image: url("/new04/neuroroboticslab/images/wide.jpg");
+  background-image: image-url("wide.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -103,12 +103,6 @@ ul.bg-image {
     @media #{$medium-up} {
       border-left: 1px solid $content-border-color;
       border-right: 1px solid $content-border-color;
-    }
-  }
-
-  .main-content-home {
-    @media #{$medium-up} {
-      // border-right: 0px;
     }
   }
 
