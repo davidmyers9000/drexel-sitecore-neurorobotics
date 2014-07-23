@@ -10,17 +10,24 @@
     / Right Nav Section
     %ul.centerthis
       - data.pages.each do |page|
-        %li.has-dropdown
-          - if current_page?(page) || current_page_is_a_sub_page?(page)
-            = link_to page.title, http_prefix+page.url, class: "active"
-          - else
-            = link_to page.title, http_prefix+page.url
+        - if page.sub_pages?
+          %li.has-dropdown
+            - if current_page?(page) || current_page_is_a_sub_page?(page)
+              = link_to page.title, http_prefix+page.url, class: "active"
+            - else
+              = link_to page.title, http_prefix+page.url
 
-          %ul.dropdown
-            - if page.sub_pages?
-              - page.sub_pages.each do |sub|
-                %li
-                  - if current_page?(sub)
-                    = link_to sub.title, http_prefix+page.url+'/'+sub.url, class: "active"
-                  - else
-                    = link_to sub.title, http_prefix+page.url+'/'+sub.url
+            %ul.dropdown
+              - if page.sub_pages?
+                - page.sub_pages.each do |sub|
+                  %li
+                    - if current_page?(sub)
+                      = link_to sub.title, http_prefix+page.url+'/'+sub.url, class: "active"
+                    - else
+                      = link_to sub.title, http_prefix+page.url+'/'+sub.url
+        - else  
+          %li
+            - if current_page?(page)
+              = link_to page.title, http_prefix+page.url, class: "active"
+            - else
+              = link_to page.title, http_prefix+page.url

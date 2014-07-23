@@ -47,7 +47,7 @@ nav.top-bar {
       @media #{$small-only} { width: 100%; }
     }
 
-    li.has-dropdown {
+    li {
       a {
         @include font-stack;
         color: #fff;
@@ -61,7 +61,9 @@ nav.top-bar {
       }
       ul.dropdown {
         li {
-          width: 200px;
+          @media #{$medium-up} {
+            width: 200px;
+          }
           a {
             font-size: 12px;
             font-family: Arial, sans-serif;
