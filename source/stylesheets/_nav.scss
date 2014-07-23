@@ -53,7 +53,10 @@ nav.top-bar {
         color: #fff;
         padding: 20px 30px 21px !important;
         font-size: 14px;
-        line-height: 14px;
+        @media #{$medium-up} {
+          &:not(.has-form) { line-height: 14px; }
+          &:not(.button) { line-height: 14px; }
+        }
         // @media #{$small-only} {}
         &::after { display: none; }
         &.active { color: $drexel-yellow; }
