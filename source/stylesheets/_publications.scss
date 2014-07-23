@@ -1,0 +1,25 @@
+$highlight-color-1: #ffc600;
+$highlight-color-2: #FFF;
+// $highlight-color-2: #FFF3BE;
+
+:target {
+  -webkit-animation: highlight 1s ease;  
+  -moz-animation: highlight 1s ease;
+  background-color: $highlight-color-2;
+}
+
+@-webkit-keyframes highlight {
+  0% { background-color: $highlight-color-1; }
+  100% { background-color: $highlight-color-2; }
+}
+@-moz-keyframes highlight {
+  0% { background-color: $highlight-color-1; }
+  100% { background-color: $highlight-color-2; }
+}
+.publications > .pub {
+  -webkit-transition: all 0.5s ease; 
+  -moz-transition: all 0.5s ease; 
+  -ms-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease;    
+  padding: 10px; 
+}

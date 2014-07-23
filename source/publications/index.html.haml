@@ -5,11 +5,10 @@ title: Publications
 .row
   .twelve.large-12.columns
     %h3= current_page.data.title
-    %ol
+    %ol.publications
       - data.publications.each do |pub|
-        %li
-          %a( id="#{pub.url}" )
-            %strong= pub.title
+        %li.pub( id="#{pub.url}" )
+          %strong= pub.title
           %br
           %span= "Authors: #{pub.authors}"
           %br
