@@ -4,7 +4,7 @@
 
 @import "foundation/scss/foundation/settings";
 @import "foundation/scss/foundation.scss";
-@import "jquery.bxslider.scss";
+@import "bxslider-4/jquery.bxslider.scss";
 @import "compass/css3/box-shadow";
 
 // ==================
@@ -18,3 +18,5 @@
 @import "footer";
 @import "home";
 @import "slideshow";
+@import "people";
+@import "publications";
