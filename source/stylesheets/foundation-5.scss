@@ -1,5 +1,20 @@
-@import "settings";
-@import "foundation.scss";
-@import "bxslider-4/jquery.bxslider";
+// ==================
+// Vendor
+// ==================
 
-@import "style";
+@import "foundation/scss/foundation/settings";
+@import "foundation/scss/foundation.scss";
+@import "jquery.bxslider.scss";
+@import "compass/css3/box-shadow";
+
+// ==================
+// Stylesheets
+// ==================
+
+@import "fonts";
+@import "variables";
+@import "main";
+@import "nav";
+@import "footer";
+@import "home";
+@import "slideshow";

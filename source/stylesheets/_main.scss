@@ -1,4 +1,4 @@
-@mixin font-stack{
+@mixin font-stack {
   font-family: FuturaBold, sans-serif;
   text-transform: uppercase;
 } 
@@ -96,8 +96,8 @@ ul.bg-image {
   background: #fff;
   position: relative;
   z-index: 5 !important;
-  padding: 10px 0px 10px 20px;
-  @media #{$medium-only} {padding: 10px 0px 10px 10px;}
+  padding: 0px 20px 10px;
+  @media #{$medium-only} {padding: 0px 0px 10px 10px;}
 
   .main-content {
     @media #{$medium-up} {
@@ -108,12 +108,29 @@ ul.bg-image {
 
   .main-content, .main-content-home, .sidebar-right, .sidebar-left {
     padding-top: 14px;
-    @media #{$medium-only} {padding-top: 5px;}
   }
 }
 
 .columns.sidebar-right {
-  @media #{$medium-only} { padding: 5px 8px; }
+  @media #{$medium-only} { 
+    width: 24%;
+    padding: 14px 10px; 
+  }
+  &.home {
+    @media #{$medium-only} { 
+      width: 25%;
+    }
+  }
+  @media #{$large-up} {
+    padding-right: 0px;
+  }
+
+}
+
+.columns#breadcrumb {
+  @media #{$large-up} {
+    padding-right: 5px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

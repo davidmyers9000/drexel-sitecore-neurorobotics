@@ -29,9 +29,11 @@ ul.bxslider {
   }
 
   .bx-viewport {
-    @include single-box-shadow( transparent, 0px, 0px, 0px );
-    border: 0px solid transparent;
-    left: 0px;
+    @include single-box-shadow( 0px, 0px, 0px, 0px, transparent );
+    border: 0px;
+    @media #{$medium-only} {
+      left: 0;
+    }
   }
   .bx-caption {
     background: $drexel-blue;
@@ -68,7 +70,7 @@ ul.bxslider {
       position: absolute;
       top: 0px;
       left: 500px;
-      height: 335px;
+      height: 335px; 
       width: 380px;
       background-color: #07294D;
       padding: 36px 37px 0px;
