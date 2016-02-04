@@ -21,9 +21,7 @@
 
 Gemfile.lock
 
-bower_components/
-
+source/bower_components/
 data/ftp.yml
+config.rb
 *.psd
-
-config1.rb

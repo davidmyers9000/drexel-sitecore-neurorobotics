@@ -29,11 +29,11 @@ nav.top-bar {
         background: $drexel-blue image-url("sprite.png") right -93px no-repeat;
       }
 
-      @media #{$small-up} { 
+      @media #{$small-up} {
         display: none;
       }
 
-      @media #{$small-only} { 
+      @media #{$small-only} {
         display: block;
       }
     }
@@ -48,7 +48,7 @@ nav.top-bar {
       @media #{$small-only} { width: 100%; }
     }
 
-    li {
+    li.has-dropdown {
       a {
         @include font-stack;
         color: #fff;
@@ -58,6 +58,7 @@ nav.top-bar {
           &:not(.has-form) { line-height: 14px; }
           &:not(.button) { line-height: 14px; }
         }
+        line-height: 14px;
         // @media #{$small-only} {}
         &::after { display: none; }
         &.active { color: $drexel-yellow; }
@@ -65,9 +66,7 @@ nav.top-bar {
       }
       ul.dropdown {
         li {
-          @media #{$medium-up} {
-            width: 200px;
-          }
+          width: 200px;
           a {
             padding: 10px 25px 10px !important;
             font-size: 12px;
@@ -77,6 +76,7 @@ nav.top-bar {
             &.active { color: $drexel-yellow; }
           }
         }
+        li.parent-link { display: none !important; }
         li:last-child {
           a {
             padding-bottom: 20px !important;
@@ -146,7 +146,7 @@ nav.nav-sidebar {
 
         &.active, &:hover {
           background-color: $drexel-yellow;
-        }   
+        }
       }
     }
   }

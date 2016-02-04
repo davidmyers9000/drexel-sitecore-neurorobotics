@@ -3,6 +3,7 @@ title: Home
 ---
 
 %ul.bxslider
+<<<<<<< HEAD
   %li= image_tag "slideshow/spinal-cord-surgery.jpg", title: "Cortical Reorganization after Spinal Cord Surgery <br><a class='more-link' href='#{http_prefix}research/spinal-cord-surgery'>More Info</a>"
   %li= image_tag "slideshow/brain-machine-interfaces.jpg", title: "Cortical Brain Machine Interfaces (BMI) for restoring locomotion <br><a class='more-link' href='#{http_prefix}research/brain-machine-interfaces'>More Info</a>"
   %li= image_tag "slideshow/research-developments.jpg", title: "Technology Developments and Patents <br><a class='more-link' href='#{http_prefix}technology-development'>More Info</a>"
@@ -27,3 +28,9 @@ title: Home
             %strong= link_to data.publications[i].title, "publications##{data.publications[i].url}"
             = "- #{data.publications[i].publisher}"
       = link_to "More Publications", "#{http_prefix}publications", class: "more-link"
+=======
+  %li= image_tag "http://placehold.it/500x335&text=one", title: "This is a caption"
+  %li= image_tag "http://placehold.it/500x335&text=two", title: "This is a caption"
+  %li= image_tag "http://placehold.it/500x335&text=three", title: "This is a caption"
+  %li= image_tag "http://placehold.it/500x335&text=four", title: "This is a caption"
+>>>>>>> 37764e693424e5e02bdab4f0b3405aa21b7573a3
