@@ -2,35 +2,24 @@
 title: Home
 ---
 
-%ul.bxslider
-<<<<<<< HEAD
-  %li= image_tag "slideshow/spinal-cord-surgery.jpg", title: "Cortical Reorganization after Spinal Cord Surgery <br><a class='more-link' href='#{http_prefix}research/spinal-cord-surgery'>More Info</a>"
-  %li= image_tag "slideshow/brain-machine-interfaces.jpg", title: "Cortical Brain Machine Interfaces (BMI) for restoring locomotion <br><a class='more-link' href='#{http_prefix}research/brain-machine-interfaces'>More Info</a>"
-  %li= image_tag "slideshow/research-developments.jpg", title: "Technology Developments and Patents <br><a class='more-link' href='#{http_prefix}technology-development'>More Info</a>"
-  %li= image_tag "slideshow/epilectic-seizures.jpg", title: "Neuronal Dynamics during Epilectic Seizures <br><a class='more-link' href='#{http_prefix}research/epilectic-seizures'>More Info</a>"
-
 .row
   .six.medium-6.columns
     .home-panel
-      %h3.home Recent News
-      %ul
-        %li <strong>Amrit Misra</strong> successfully defended his PhD thesis on June 11th 2014, titled  <strong>"Changes in Neuronal Firing and Synchrony Precede Recruitment of Mesial Temporal Networks into Generalizing Seizures"</strong>
-        %li <strong>Amrit Misra</strong> was awarded the Research Excellence Award in the doctoral category by the Office of Graduate Studies for the year 2014 recognizing outstanding contribution to research in the Drexel community. 
-        %li <strong>Anitha Manohar</strong> and <strong>Suganya Karunakaran</strong> both received the 2014 Office of Graduate Studies Dissertation Fellowship.
-      = link_to "More News", "#", class: "more-link"
+      %h3.home.underline Recent Publications
+      %ol
+        - for i in 0..4 do
+          %li
+            %p
+              %strong= link_to data.publications[i].title, "publications/overview##{data.publications[i].url}"
+              = "- #{data.publications[i].publisher}"
+      = link_to "More Publications", "#{http_prefix}publications/overview", class: "more-link"
 
   .six.medium-6.columns
     .home-panel
-      %h3.home Recent Publications
+      %h3.home.underline Recent News
       %ul
-        - for i in 0..3 do
-          %li
-            %strong= link_to data.publications[i].title, "publications##{data.publications[i].url}"
-            = "- #{data.publications[i].publisher}"
-      = link_to "More Publications", "#{http_prefix}publications", class: "more-link"
-=======
-  %li= image_tag "http://placehold.it/500x335&text=one", title: "This is a caption"
-  %li= image_tag "http://placehold.it/500x335&text=two", title: "This is a caption"
-  %li= image_tag "http://placehold.it/500x335&text=three", title: "This is a caption"
-  %li= image_tag "http://placehold.it/500x335&text=four", title: "This is a caption"
->>>>>>> 37764e693424e5e02bdab4f0b3405aa21b7573a3
+        %li <strong>Chen Liu</strong> presented her work entitled <strong>"Functional Role of Neuron Adaptation in Encoding Context Information"</strong> at the Biomedical Engineering Society Meeting, Tampa FL, October 7-10th, 2015.
+        %li <strong>Marissa Powers</strong> successfully defended her PhD thesis on August 24th 2015, entitled <strong>"Population level dynamics of cells in the rat hindlimb sensorimotor cortex during bipedal obstacle avoidance"</strong>
+        %li <strong>Amrit Misra</strong> successfully defended his PhD thesis on June 11th 2014, entitled  <strong>"Changes in Neuronal Firing and Synchrony Precede Recruitment of Mesial Temporal Networks into Generalizing Seizures"</strong>
+        %li <strong>Amrit Misra</strong> was awarded the Research Excellence Award in the doctoral category by the Office of Graduate Studies for the year 2014 recognizing outstanding contribution to research in the Drexel community.
+      / = link_to "More News", "#", class: "more-link"

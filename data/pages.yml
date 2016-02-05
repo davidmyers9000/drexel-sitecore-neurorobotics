@@ -1,5 +1,8 @@
 - title: People
   url: people
+  sub_pages:
+    - title: Overview
+      url: overview
 
 - title: Research
   url: research
@@ -15,9 +18,15 @@
 
 - title: Technology Development
   url: technology-development
+  sub_pages:
+    - title: Overview
+      url: overview
 
 - title: Publications
   url: publications
+  sub_pages:
+    - title: Overview
+      url: overview
 
 - title: About
   url: about

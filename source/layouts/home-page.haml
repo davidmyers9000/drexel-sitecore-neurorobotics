@@ -25,9 +25,11 @@
             = partial "nav-topbar"
         .row.wrap
           .nine.medium-9.columns.main-content-home.pad-0
-            = yield
+            = partial "slideshow"
           .three.medium-3.columns.sidebar-right.home
             = partial "sidebar-right-home"
+        .row.wrap
+          = yield
       %footer.footer
         = partial "footer"
 

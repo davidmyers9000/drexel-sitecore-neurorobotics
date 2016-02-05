@@ -1,31 +1,22 @@
 .home-panel {
-  background: $drexel-blue;
-  padding-bottom: 1em;
-  margin-bottom: 2em;
-
-  h3 {
-    color: #fff;
-    padding: 0.4em;
-    margin: 0;
+  h3.underline {
+    border-bottom: 1px solid #ccc;
   }
 
-  ul {
-    list-style: none; // clear default styling
+  ul, ol {
     margin: 0;        // clear default styling
-    background: #fff;
-    margin-right: 2em;
-    @media #{$medium-only} { margin-right: 0.5em }
-    @media #{$large-only} { margin-right: 01em }
 
     li {
-      border-left: 1px solid $drexel-blue;
-      border-bottom: 1px solid $drexel-blue;
-      padding: 10px;
       // font-weight: bold;
       @media #{$medium-only} { font-size: 10px; }
+      margin: 0 0 .8em 0;
+
+      p { margin: 0 !important; }
 
     }
   }
+  ul { list-style: none }
+  ol { margin: 0 0 0 1em; }
 }
 a.more-link {
   font-size: 12px;

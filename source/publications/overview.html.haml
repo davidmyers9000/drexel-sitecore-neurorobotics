@@ -1,23 +1,24 @@
 ---
 title: Publications
 ---
-  
+
 .row
   .twelve.large-12.columns
     %h3= current_page.data.title
     %ol.publications
       - data.publications.each do |pub|
         %li.pub( id="#{pub.url}" )
-          %strong= pub.title
+          %strong Title:
+          = pub.title
           %br
-          %span= "Authors: #{pub.authors}"
+          %strong Authors:
+          = "#{pub.authors}"
           %br
-          %span= "Publisher: #{pub.publisher}"
+          %strong Publisher:
+          = "#{pub.publisher}"
           %br
+          %strong Citation:
           %em= "#{pub.citation}"
-          %br
-          %br
-
 
 
       / %li Grasse, D. W., Karunakaran, S. & Moxon, K. A. Neuronal synchrony and the transition to spontaneous seizures. Exp. Neurol. 248, 72–84 (2013).
