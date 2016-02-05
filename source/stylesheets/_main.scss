@@ -104,6 +104,7 @@ ul.bg-image {
       border-left: 1px solid $content-border-color;
       border-right: 1px solid $content-border-color;
     }
+    &.no-stroke { border: none; }
   }
 
   .main-content, .main-content-home, .sidebar-right, .sidebar-left {
