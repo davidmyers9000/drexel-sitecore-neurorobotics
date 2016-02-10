@@ -10,7 +10,7 @@ title: Home
         - for i in 0..4 do
           %li
             %p
-              %strong= link_to data.publications[i].title, "publications/overview##{data.publications[i].url}"
+              %strong= link_to data.publications[i].title, "publications/overview##{data.publications[i].title.split[0..2].join('-')}"
               = "- #{data.publications[i].publisher}"
       = link_to "More Publications", "#{http_prefix}publications/overview", class: "more-link"
 
